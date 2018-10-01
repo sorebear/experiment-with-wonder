@@ -1,7 +1,14 @@
 import React from 'react';
+import library from '../assets/images/library.jpg';
+
+const backgroundImageStyle = {
+  backgroundImage: `linear-gradient(rgba(51, 51, 51, .85), rgba(51, 51, 51, .85)), url(${library})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover'
+}
 
 export default () => (
-  <section id="two" className="main style2">
+  <section id="two" className="main style2" style={backgroundImageStyle}>
     <div className="grid-wrapper">
       <div className="col-12">
         <header className="major">

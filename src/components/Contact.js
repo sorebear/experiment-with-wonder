@@ -71,7 +71,7 @@ export default ({pageState, setPageState }) => {
         <div className="grid-wrapper">
           <div className="col-12 align-center">
             <ul className="actions uniform">
-              <li><button type="submit" className="button special">Send</button></li>
+              <li><button type="submit" className="button">Send</button></li>
             </ul>
           </div>
         </div>
