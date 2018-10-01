@@ -26,6 +26,53 @@
 	boxModel: 'border'
 ));
 
+/* My Included Stuff */
+
+@keyframes rotate {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.orange {
+	color: #e9780e !important;
+}
+
+.orange-bg {
+	background-color: #e9780e !important;
+}
+
+.gear-container {
+	span.image.fit {
+		position: relative;
+
+		img {
+			width: 50%;
+			max-width: 250px;
+			margin: 0 auto;
+			transform-style: preserve-3d;
+			backface-visibility: hidden;
+			animation: rotate 10s linear forwards infinite;
+			animation-play-state: paused;
+		}
+
+		h2 {
+			// font-size: 2.5em;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&:hover {
+		img {
+			animation-play-state: running !important;
+		}
+	}
+}
+
+
 /* Basic */
 
 	body {
@@ -219,7 +266,7 @@
 			margin: 0 0 (_size(element-margin) * 0.5) 0;
 
 			&:after {
-				background: _palette(border);
+				background: _palette(dark-orange);
 				content: '';
 				display: inline-block;
 				height: 1px;
@@ -252,7 +299,7 @@
 		display: block;
 		font-size: 0.9em;
 		font-weight: _font(weight-bold);
-		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		margin: (_size(element-margin) * 0.5) 0 0 0;
 	}
 
 	input[type="text"],
@@ -277,7 +324,7 @@
 		}
 
 		&:focus {
-			border-color: _palette(accent3);
+			border-color: _palette(dark-orange);
 		}
 	}
 
@@ -336,6 +383,7 @@
 			padding-left: (_size(element-height) * 0.6) + 0.75em;
 			padding-right: 0.75em;
 			position: relative;
+			margin: (_size(element-margin) * 0.25) 0 (_size(element-margin)) 0;
 
 			&:before {
 				background: _palette(border-bg);
@@ -364,7 +412,7 @@
 
 		&:focus + label {
 			&:before {
-				border-color: _palette(accent3);
+				border-color: _palette(dark-orange);
 			}
 		}
 	}
@@ -776,6 +824,7 @@
 		height: 2.75em;
 		letter-spacing: 0.125em;
 		line-height: 2.75em;
+		outline: none;
 		padding: 0 2em;
 		text-align: center;
 		text-decoration: none;
@@ -784,10 +833,12 @@
 		white-space: nowrap;
 
 		&:hover {
+			outline: none;
 			background-color: _palette(border-bg);
 		}
 
 		&:active {
+			outline: none;
 			background-color: _palette(border2-bg);
 		}
 
@@ -859,7 +910,8 @@
 
 			&.major {
 				&:after {
-					background: _palette(dark, border);
+					// background: _palette(dark, border);
+					background: _palette(dark-orange);
 				}
 			}
 		}
@@ -924,9 +976,14 @@
 
 		&.style2 {
 			@include dark(#333);
-			background-attachment:	fixed,							fixed;
+			background-attachment:	fixed, fixed;
 			background-image:		url('../images/overlay1.png'),		url('../images/header.jpg');
 			background-size:		auto,							cover;
+		}
+
+		&.style3 {
+			background-color: #333;
+			background-image: none;
 		}
 	}
 
@@ -936,12 +993,19 @@
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
 		@include dark(#4686a0);
 		background-attachment:	fixed,							fixed,							fixed;
-		background-image:		url('../images/overlay2.png'),		url('../images/overlay3.svg'),		linear-gradient(45deg, _palette(accent1-alt) 5%, _palette(accent3-alt) 30%, _palette(accent6-alt));
-		background-position:	top left,						center center,					center center;
-		background-size:		auto,							cover,							cover;
+		// background-image:		url('../images/overlay2.png'),		url('../images/overlay3.svg'),		linear-gradient(45deg, _palette(accent1-alt) 5%, _palette(accent3-alt) 30%, _palette(accent6-alt));
+		background-image: linear-gradient(45deg, rgba(#333, .7), rgba(#333, .7)), url('../images/cafe.jpg');
+		background-size: cover;
+		background-position: bottom center;
+		background-repeat: no-repeat;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+		background-color: #e6d6b5;
+		min-height: 75vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		h1 {
 			margin: 0;

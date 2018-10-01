@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Photon",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Photon by HTML5 UP"
+    title: "Wonderment, Inc. | Experiment with Wonder",
+    author: "Caitlin Baird",
+    description: "Transformation Coaching to Explore Life's Possibilities."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
