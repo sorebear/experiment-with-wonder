@@ -11,12 +11,12 @@ export default () => (
   <section id="two" className="main style2" style={backgroundImageStyle}>
     <div className="grid-wrapper">
       <div className="col-12">
-        <header className="major">
+        <header className="major align-center">
           <h2>Feel like you're missing out?</h2>
         </header>
       </div>
         <div className="col-6">
-          <ul>
+          <ul className="align-left" style={{ marginBottom: 0 }}>
             <li>Do you long for something new in your relationships?</li>
             <li>Does work feel like the same thing over and over again?</li>
             <li>Have you lost your passion?</li>
@@ -24,7 +24,7 @@ export default () => (
           </ul>
         </div>
         <div className="col-6">
-          <ul>
+          <ul className="align-left">
             <li>Do you wish you were more creative?</li>
             <li>Do you regularly feel irritated or angry?</li>
             <li>Are you struggling to get up in the morning?</li>

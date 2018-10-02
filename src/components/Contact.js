@@ -14,25 +14,28 @@ export default ({pageState, setPageState }) => {
           <div className="col-12">
             <label>Name</label>
             <input
+              required
               type="text" 
               value={contactName}
               onChange={(e) => setPageState({ contactName: e.target.value })}
             />
             <label>Email</label>
             <input
+              required
               type="email"
               value={contactEmail}
               onChange={(e) => setPageState({ contactEmail: e.target.value })}
             />
             <label>Message</label>
             <textarea
+              required
               value={contactMessage}
               onChange={(e) => setPageState({ contactMessage: e.target.value })}
             />
             <label>Coaching I'm interested in (Select all that apply)</label>
           </div>
         </div>
-        <div className="grid-wrapper align-left">
+        <div className="grid-wrapper align-left-in-desktop">
           <div className="col-4">
             <input
               type="checkbox"
@@ -44,7 +47,7 @@ export default ({pageState, setPageState }) => {
             />
             <label htmlFor="one-on-one">One-on-One Coaching</label>
           </div>
-          <div className="col-4 align-center">
+          <div className="col-4 align-center-in-desktop">
             <input
               type="checkbox"
               name="coaching"
@@ -56,7 +59,7 @@ export default ({pageState, setPageState }) => {
             <label htmlFor="group-coaching">Group Coaching</label>
 
           </div>
-          <div className="col-4 align-right">
+          <div className="col-4 align-right-in-desktop">
             <input
               type="checkbox"
               name="coaching"

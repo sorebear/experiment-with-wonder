@@ -214,7 +214,25 @@
 			padding: 1em 1.5em;
 			overflow-x: auto;
 		}
-	}
+  }
+  
+  .align-left-in-desktop {
+    @media screen and (min-width: 980px) {
+      text-align: left;
+    }
+  }
+
+  .align-center-in-desktop {
+    @media screen and (min-width: 980px) {
+      text-align: center;
+    }
+  }
+
+  .align-right-in-desktop {
+    @media screen and (min-width: 980px) {
+      text-align: right;
+    }
+  }
 
 	.align-left {
 		text-align: left;
@@ -1001,8 +1019,7 @@
 	#header {
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
 		@include dark(#4686a0);
-		background-attachment:	fixed,							fixed,							fixed;
-		// background-image:		url('../images/overlay2.png'),		url('../images/overlay3.svg'),		linear-gradient(45deg, _palette(accent1-alt) 5%, _palette(accent3-alt) 30%, _palette(accent6-alt));
+		background-attachment:	fixed, fixed, fixed;
 		background-image: linear-gradient(45deg, rgba(#333, .7), rgba(#333, .7)), url('../images/cafe.jpg');
 		background-size: cover;
 		background-position: bottom center;

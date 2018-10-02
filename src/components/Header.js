@@ -5,7 +5,7 @@ export default ({ setPageState }) => (
   <section id="header">
     <div className="inner">
       <span className="icon major fa-flask"></span>
-      <h1><strong style={{fontSize: '200%'}}>Wonderment, Inc.</strong><br />
+      <h1><strong style={{fontSize: '180%'}}>Wonderment, Inc.</strong><br style={{ display: 'inline' }} />
       <span>Experiment with Wonder</span></h1>
       <p>Transformational Coaching to Explore Life’s Possibilities</p>
       <ul className="actions">

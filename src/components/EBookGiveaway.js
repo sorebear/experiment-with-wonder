@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+export default ({ pageState, setPageState }) => (
   <section id="four" className="main style2 style3 special">
     <div className="container">
       <header className="major">
@@ -12,7 +12,12 @@ export default () => (
         <p>Download my free e-book and start "wondering" now.</p>
         <form>
           <label className="align-left" style={{ color: 'rgba(255, 255, 255, .75)' }}>Email</label>
-          <input type="email"></input>
+          <input
+            required
+            type="email"
+            value={pageState.ebookEmail}
+            onChange={(e) => setPageState({ ebookEmail: e.target.value })}
+          />
           <ul className="actions uniform">
             <li><button type="submit" className="button" style={{ marginTop: '2em' }}>Get Free E-Book</button></li>
           </ul>
