@@ -2,6 +2,7 @@ import React from 'react';
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
+import Link from 'gatsby-link';
 
 export default () => (
   <section id="three" className="main style1 special">
@@ -17,7 +18,7 @@ export default () => (
         <h3>ONE-ON-ONE COACHING</h3>
         <p>Start immediately with an experienced coach. Non-Profit rates available</p>
         <ul className="actions">
-          <li><a href="#" className="button">More</a></li>
+          <li><Link to="./coaching" className="button">More</Link></li>
         </ul>
       </div>
       <div className="col-4">

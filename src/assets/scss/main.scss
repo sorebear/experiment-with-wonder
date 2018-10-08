@@ -41,6 +41,51 @@
 	background-color: #e9780e !important;
 }
 
+.sub-header-icons {
+  padding: 2em 0 !important;
+  background-color: #333 !important;
+
+  .col-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    h3, span {
+      margin: 0;
+      color: white;
+    }
+
+    span {
+      background-color: _palette(off-white);
+      padding: 15px 30px;
+      border-radius: 75% 50%;
+
+    }
+  }
+}
+
+div.get-to-know-accordion {
+  border: none;
+  background-color: transparent;
+
+  .arrow {
+    display: none !important;
+  }
+
+  & > .rc-collapse-item {
+    & > .rc-collapse-header {
+      height: 0;
+    }
+
+    & > .rc-collapse-content {
+      padding-top: 2em;
+      background-color: transparent;
+      color: white;
+    }
+  }
+
+}
+
 .gear-container {
 	span.image.fit {
 		position: relative;
@@ -1000,13 +1045,12 @@
 			background-size: auto,	cover;
 
 			* {
-				text-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+				text-shadow: 0 3px 5px rgba(0, 0, 0, .25);
 			}
 		}
 
 		&.style3 {
-			background-color: #333;
-			background-image: none;
+			background: _palette(off-white);
 
 			* {
 				text-shadow: none;
@@ -1020,7 +1064,7 @@
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
 		@include dark(#4686a0);
 		background-attachment:	fixed, fixed, fixed;
-		background-image: linear-gradient(45deg, rgba(#333, .7), rgba(#333, .7)), url('../images/cafe.jpg');
+		background-image: linear-gradient(45deg, rgba(#333, .7), rgba(#333, .7)), url('../images/header.jpg');
 		background-size: cover;
 		background-position: bottom center;
 		background-repeat: no-repeat;

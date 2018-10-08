@@ -1,13 +1,10 @@
 import React from 'react'
 import smoothscroll from 'smoothscroll';
 
-export default ({ setPageState }) => (
+export default ({ setPageState, children }) => (
   <section id="header">
     <div className="inner">
-      <span className="icon major fa-flask"></span>
-      <h1><strong style={{fontSize: '180%'}}>Wonderment, Inc.</strong><br style={{ display: 'inline' }} />
-      <span>Experiment with Wonder</span></h1>
-      <p>Transformational Coaching to Explore Life’s Possibilities</p>
+      { children }
       <ul className="actions">
         <li>
           <button

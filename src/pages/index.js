@@ -36,8 +36,15 @@ class Homepage extends React.Component {
 
     return (
       <Layout>
-        <Helmet title={siteTitle} />
-        <Header setPageState={this.setState} />
+        <Helmet title={siteTitle}>
+          {/* <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"></link> */}
+        </Helmet>
+        <Header setPageState={this.setState}>
+          <span className="icon major fa-flask"></span>
+          <h1><strong style={{fontSize: '180%'}}>Wonderment, Inc.</strong><br style={{ display: 'inline' }} />
+          <span>Experiment with Wonder</span></h1>
+          <p>Transformational Coaching to Explore Life’s Possibilities</p>
+        </Header>
         <GetCurious />
         <AreYouMissoungOut />
         <WonderWhatsNext />
