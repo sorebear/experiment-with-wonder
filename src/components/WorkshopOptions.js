@@ -1,9 +1,8 @@
 import React from 'react';
 import smoothscroll from 'smoothscroll';
 
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-
+import clearing from '../assets/images/clearing.jpg';
+import wine from '../assets/images/wine-and-cheese.jpg';
 
 export default () => (
   <section id="three" className="main style1 special">
@@ -15,7 +14,9 @@ export default () => (
       </div>
 
       <div className="col-6">
-        <span className="image fit"><img src={pic02} alt="" /></span>
+        <span className="image fit">
+          <div className="section-header-image" style={{ background: `url(${clearing})`}}/>
+        </span>
         <h3>The Clearing</h3>
         <p>Leadership Training</p>
         <ul className="actions">
@@ -27,7 +28,9 @@ export default () => (
         </ul>
       </div>
       <div className="col-6">
-        <span className="image fit"><img src={pic03} alt="" /></span>
+        <span className="image fit">
+          <div className="section-header-image" style={{ background: `url(${wine})`}} />
+        </span>
         <h3>Wine & Wonder</h3>
         <p>Creativity Coaching</p>
         <ul className="actions">

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default ({ pageState, setPageState }) => (
-  <section id="four" className="main style2 style3 special">
+  <section id="four" className="main style2 style4 special">
     <div className="container">
       <header className="major">
         <h2>Give Away E-Book</h2>

@@ -1,5 +1,6 @@
 import React from 'react';
 import clearing from '../assets/images/clearing.jpg';
+import CtaButton from '../components/CtaButton';
 
 const backgroundImageStyle = {
   backgroundImage: `linear-gradient(rgba(51, 51, 51, .7), rgba(51, 51, 51, .7)), url(${clearing})`,
@@ -7,7 +8,7 @@ const backgroundImageStyle = {
   backgroundSize: 'cover'
 }
 
-export default () => (
+export default ({ setPageState }) => (
   <React.Fragment>
   <section id="the-clearing" className="main style2" style={backgroundImageStyle}>
     <div className="grid-wrapper">
@@ -21,9 +22,7 @@ export default () => (
           </p>
         </header>
         <p><em>Available for corporate and non-profit settings</em></p>
-        <button className="button">
-          Info on Upcoming Sessions
-        </button>
+        <CtaButton buttonType="clearing" setPageState={setPageState} />
       </div>
     </div>
   </section>

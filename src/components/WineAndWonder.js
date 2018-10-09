@@ -1,8 +1,8 @@
 import React from 'react';
-import clearing from '../assets/images/clearing.jpg';
+import wine from '../assets/images/wine-and-cheese.jpg';
 
 const backgroundImageStyle = {
-  backgroundImage: `linear-gradient(rgba(51, 51, 51, .7), rgba(51, 51, 51, .7)), url(${clearing})`,
+  backgroundImage: `linear-gradient(rgba(51, 51, 51, .7), rgba(51, 51, 51, .7)), url(${wine})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover'
 }

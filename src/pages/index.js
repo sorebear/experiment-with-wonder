@@ -37,13 +37,11 @@ class Homepage extends React.Component {
     return (
       <Layout>
         <Helmet title={siteTitle}>
-          {/* <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"></link> */}
         </Helmet>
-        <Header setPageState={this.setState}>
+        <Header setPageState={this.setState} buttonType="coaching">
           <span className="icon major fa-flask"></span>
-          <h1><strong style={{fontSize: '180%'}}>Wonderment, Inc.</strong><br style={{ display: 'inline' }} />
-          <span>Experiment with Wonder</span></h1>
-          <p>Transformational Coaching to Explore Life’s Possibilities</p>
+          <h1><strong style={{fontSize: '180%'}}>Experiment with Wonder</strong><br style={{ display: 'inline' }} />
+          <span>Transformational Coaching to Explore Life’s Possibilities</span></h1>
         </Header>
         <GetCurious />
         <AreYouMissoungOut />
@@ -51,7 +49,7 @@ class Homepage extends React.Component {
         <WonderYourWay />
         <CoachingOptions />
         <HowItWorks />
-        <EBookGiveaway pageState={this.state} setPageState={this.setState} />
+        {/* <EBookGiveaway pageState={this.state} setPageState={this.setState} /> */}
         <Testimonials />
         <AboutCaitlin />
         <Contact pageState={this.state} setPageState={this.setState} />

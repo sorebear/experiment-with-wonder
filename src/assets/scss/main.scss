@@ -64,6 +64,16 @@
   }
 }
 
+div.faq-accordion {
+
+  & > .rc-collapse-item {
+    & > .rc-collapse-header {
+      padding: 10px 20px;
+      box-sizing: content-box;
+    }
+  }
+}
+
 div.get-to-know-accordion {
   border: none;
   background-color: transparent;
@@ -1055,10 +1065,31 @@ div.get-to-know-accordion {
 			* {
 				text-shadow: none;
 			}
-		}
+    }
+    
+    &.style4 {
+      background: #333;
+
+      * {
+        text-shadow: none;
+      }
+    }
 	}
 
 /* Header */
+
+  div.section-header-image {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 4px;
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 240 / 368 * 100%
+    }
+  }
 
 	#header {
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
@@ -1240,7 +1271,7 @@ div.get-to-know-accordion {
 				@include padding(4em, 0);
 
 				&.style2 {
-					background-attachment: scroll;
+					background-attachment: fixed;
 				}
 			}
 

@@ -45,6 +45,7 @@ export default class GetToKnow extends React.Component {
               onChange={this.onChange}
               activeKey={this.state.activeKey}
               className="get-to-know-accordion"
+              showArrow={false}
             >
               <Collapse.Panel>
                 <p>

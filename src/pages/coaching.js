@@ -30,7 +30,7 @@ class Coaching extends React.Component {
   render() {
     return (
       <Layout>
-        <Header setPageState={this.setState}>
+        <Header setPageState={this.setState} buttonType="coaching">
           <span className="icon major fa-flask"></span>
           <h1><strong style={{fontSize: '180%'}}>Experiment With</strong><br style={{ display: 'inline' }} />
           <span>One-on-One and Group Coaching to Explore Life’s Possibilities</span></h1>

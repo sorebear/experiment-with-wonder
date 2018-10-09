@@ -27,15 +27,14 @@ class Coaching extends React.Component {
   render() {
     return (
       <Layout>
-        <Header setPageState={this.setState}>
+        <Header setPageState={this.setState} buttonType="workshop">
           <span className="icon major fa-flask"></span>
           <h1><strong style={{fontSize: '180%'}}>Live Workshops</strong><br style={{ display: 'inline' }} />
           <span>One-on-One and Group Coaching to Explore Life’s Possibilities</span></h1>
-          <p></p>
         </Header>
         <WorkshopOptions />
-        <TheClearing />
-        <WineAndWonder />
+        <TheClearing setPageState={this.setState} />
+        <WineAndWonder setPageState={this.setState} />
         <GetToKnow />
         <Contact pageState={this.state} setPageState={this.setState} />
       </Layout>
