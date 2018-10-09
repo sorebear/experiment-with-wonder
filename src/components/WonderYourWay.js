@@ -13,7 +13,9 @@ export default () => (
       <div className="col-12">
         <header>
           <h2 className="align-center">
-            "You won't wander into a meaningful life, but you can wonder your way into a life worth living."
+            <em>
+              "You won't wander into a meaningful life, but you can wonder your way into a life worth living."  
+            </em>
           </h2>
         </header>
       </div>

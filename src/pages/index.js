@@ -14,6 +14,7 @@ import WonderWhatsNext from '../components/WonderWhatsNext';
 import WonderYourWay from '../components/WonderYourWay';
 import AreYouMissoungOut from "../components/AreYouMissoungOut";
 import Header from "../components/Header";
+import header from '../assets/images/header.jpg';
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -38,17 +39,21 @@ class Homepage extends React.Component {
       <Layout>
         <Helmet title={siteTitle}>
         </Helmet>
-        <Header setPageState={this.setState} buttonType="coaching">
+        <Header
+          setPageState={this.setState}
+          buttonType="coaching"
+          backgroundImg={header}
+        >
           <span className="icon major fa-flask"></span>
-          <h1><strong style={{fontSize: '180%'}}>Experiment with Wonder</strong><br style={{ display: 'inline' }} />
-          <span>Transformational Coaching to Explore Life’s Possibilities</span></h1>
+          <h1><span style={{fontSize: '2rem'}}>Experiment with Wonder</span><br style={{ display: 'inline' }} />
+          <strong>Transformational Coaching<br />to Explore&nbsp;Life’s&nbsp;Possibilities</strong></h1>
         </Header>
         <GetCurious />
         <AreYouMissoungOut />
         <WonderWhatsNext />
         <WonderYourWay />
         <CoachingOptions />
-        <HowItWorks />
+        <HowItWorks setPageState={this.setState} />
         {/* <EBookGiveaway pageState={this.state} setPageState={this.setState} /> */}
         <Testimonials />
         <AboutCaitlin />

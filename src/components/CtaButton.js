@@ -9,6 +9,13 @@ const messages = {
     interestGroup: false,
     interestWorkshop: false
   },
+  coachingGetStarted: {
+    contactMessage: `I'd like to start with a free coaching session!`,
+    buttonText: 'Get Started',
+    interestOneOnOne: true,
+    interestGroup: false,
+    interestWorkshop: false
+  },
   workshop: {
     contactMessage: `I'd like to know when the next live workshop is happening!`,
     buttonText: 'Attend Next Event',

@@ -1,6 +1,7 @@
 import React from 'react';
 import gear from '../assets/images/gear.svg';
 import levers from '../assets/images/levers.jpg';
+import CtaButton from '../components/CtaButton';
 
 const backgroundImageStyle = {
   backgroundImage: `linear-gradient(rgba(51, 51, 51, .8), rgba(51, 51, 51, .8)), url(${levers})`,
@@ -8,7 +9,7 @@ const backgroundImageStyle = {
   backgroundSize: 'cover'
 }
 
-export default () => (
+export default ({ setPageState }) => (
   <section id="two" className="main style2" style={backgroundImageStyle}>
     <div className="grid-wrapper align-center">
       <div className="col-12">
@@ -44,7 +45,9 @@ export default () => (
       </div>
       <div className="col-12">
         <ul className="actions uniform">
-          <li><a href="#" className="button">Get Started</a></li>
+          <li>
+            <CtaButton buttonType="coachingGetStarted" setPageState={setPageState} />
+          </li>
         </ul>
       </div>
     </div>

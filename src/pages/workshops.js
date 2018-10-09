@@ -7,6 +7,7 @@ import Contact from '../components/Contact';
 import GetToKnow from '../components/GetToKnow';
 import TheClearing from '../components/TheClearing';
 import WineAndWonder from '../components/WineAndWonder';
+import workshopHero from '../assets/images/workshop-hero.jpg';
 
 class Coaching extends React.Component {
   constructor(props) {
@@ -27,10 +28,14 @@ class Coaching extends React.Component {
   render() {
     return (
       <Layout>
-        <Header setPageState={this.setState} buttonType="workshop">
+        <Header
+          setPageState={this.setState} 
+          buttonType="workshop"
+          backgroundImg={workshopHero}
+        >
           <span className="icon major fa-flask"></span>
-          <h1><strong style={{fontSize: '180%'}}>Live Workshops</strong><br style={{ display: 'inline' }} />
-          <span>One-on-One and Group Coaching to Explore Life’s Possibilities</span></h1>
+          <h1><span style={{fontSize: '2rem'}}>Experiment with Wonder</span><br style={{ display: 'inline' }} />
+          <strong>Live Workshops to Explore&nbsp;Life’s&nbsp;Possibilities</strong></h1>
         </Header>
         <WorkshopOptions />
         <TheClearing setPageState={this.setState} />

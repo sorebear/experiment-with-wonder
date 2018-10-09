@@ -1,5 +1,6 @@
 import React from 'react';
 import wine from '../assets/images/wine-and-cheese.jpg';
+import CtaButton from '../components/CtaButton';
 
 const backgroundImageStyle = {
   backgroundImage: `linear-gradient(rgba(51, 51, 51, .7), rgba(51, 51, 51, .7)), url(${wine})`,
@@ -7,7 +8,7 @@ const backgroundImageStyle = {
   backgroundSize: 'cover'
 }
 
-export default () => (
+export default ({ setPageState }) => (
   <React.Fragment>
   <section id="wine-and-wonder" className="main style2" style={backgroundImageStyle}>
     <div className="grid-wrapper align-center">
@@ -23,9 +24,7 @@ export default () => (
         <p>
           In Wine & Wonder the lines between art and life blur. You need not special qualifications to be an artist—you need only to be alive.
         </p>
-        <button className="button">
-          Info on Upcoming Sessions
-        </button>
+        <CtaButton buttonType="wineAndWonder" setPageState={setPageState} />
       </div>
     </div>
   </section>

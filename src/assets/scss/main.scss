@@ -33,6 +33,55 @@
 	100% { transform: rotate(360deg); }
 }
 
+.site-logo {
+	background-color: #333;
+	font-weight: 700;
+	padding: 5px 30px;
+	border-radius: 4px;
+	margin: 0;
+	text-decoration: none;
+	border: none;
+	box-shadow: none;
+}
+
+#header a {
+	border-bottom: none;
+}
+
+.position-top-nav {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 24px;
+	right: 24px;
+	z-index: 10;
+
+	top: 24px;
+	right: auto;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	max-width: 1280px;
+	text-align: right;
+
+	button {
+		font-size: .75em;
+		background-color: _palette(dark-orange);
+		border: none !important;
+		box-shadow: none !important;
+
+		&:hover {
+			background-color: lighten(_palette(dark-orange), 15%) !important;
+		}
+	} 
+}
+
+.desktop-only {
+	@media screen and (max-width: 979px) {
+		display: none;
+	}
+}
+
 .orange {
 	color: #e9780e !important;
 }
@@ -142,7 +191,7 @@ div.get-to-know-accordion {
 		}
 	}
 
-	body, input, select, textarea {
+	body, input, select, textarea, button {
 		color: _palette(fg);
 		font-family: _font(family);
 		font-size: 16pt;

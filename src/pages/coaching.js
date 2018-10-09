@@ -10,6 +10,7 @@ import WhatToExpect from '../components/WhatToExpect';
 import CoachingGetStarted from '../components/CoachingGetStarted';
 import GetToKnow from '../components/GetToKnow';
 import FAQs from '../components/FAQs';
+import coachingHero from '../assets/images/coaching-hero.jpg';
 
 class Coaching extends React.Component {
   constructor(props) {
@@ -30,11 +31,14 @@ class Coaching extends React.Component {
   render() {
     return (
       <Layout>
-        <Header setPageState={this.setState} buttonType="coaching">
+        <Header
+          setPageState={this.setState}
+          buttonType="coaching"
+          backgroundImg={coachingHero}
+        >
           <span className="icon major fa-flask"></span>
-          <h1><strong style={{fontSize: '180%'}}>Experiment With</strong><br style={{ display: 'inline' }} />
-          <span>One-on-One and Group Coaching to Explore Life’s Possibilities</span></h1>
-          <p></p>
+          <h1><span style={{fontSize: '2rem'}}>Experiment with Wonder</span><br style={{ display: 'inline' }} />
+          <strong>One-on-One and Group Coaching<br />to Explore&nbsp;Life’s&nbsp;Possibilities</strong></h1>
         </Header>
         <Testimonials />
         <CoachingWhatsIncluded />
