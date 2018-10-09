@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Helmet from "react-helmet";
 import Header from '../components/Header';
 import Layout from '../components/layout';
 import Testimonials from '../components/Testimonials';
@@ -11,6 +11,8 @@ import CoachingGetStarted from '../components/CoachingGetStarted';
 import GetToKnow from '../components/GetToKnow';
 import FAQs from '../components/FAQs';
 import coachingHero from '../assets/images/coaching-hero.jpg';
+
+const siteTitle = 'Wonderment, Inc. | Individual and Group Coaching';
 
 class Coaching extends React.Component {
   constructor(props) {
@@ -27,10 +29,11 @@ class Coaching extends React.Component {
 
     this.setState = this.setState.bind(this);
   }
-  
+
   render() {
     return (
       <Layout>
+        <Helmet title={siteTitle}></Helmet>
         <Header
           setPageState={this.setState}
           buttonType="coaching"

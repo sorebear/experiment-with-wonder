@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from "react-helmet";
 
 import Header from '../components/Header';
 import Layout from '../components/layout';
@@ -8,6 +9,8 @@ import GetToKnow from '../components/GetToKnow';
 import TheClearing from '../components/TheClearing';
 import WineAndWonder from '../components/WineAndWonder';
 import workshopHero from '../assets/images/workshop-hero.jpg';
+
+const siteTitle = 'Wonderment, Inc. | Workshops';
 
 class Coaching extends React.Component {
   constructor(props) {
@@ -28,6 +31,7 @@ class Coaching extends React.Component {
   render() {
     return (
       <Layout>
+        <Helmet title={siteTitle}></Helmet>
         <Header
           setPageState={this.setState} 
           buttonType="workshop"
@@ -35,7 +39,7 @@ class Coaching extends React.Component {
         >
           <span className="icon major fa-flask"></span>
           <h1><span style={{fontSize: '2rem'}}>Experiment with Wonder</span><br style={{ display: 'inline' }} />
-          <strong>Live Workshops to Explore&nbsp;Life’s&nbsp;Possibilities</strong></h1>
+          <strong>Live Workshops<br />to Explore&nbsp;Life’s&nbsp;Possibilities</strong></h1>
         </Header>
         <WorkshopOptions />
         <TheClearing setPageState={this.setState} />

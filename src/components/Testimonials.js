@@ -10,7 +10,7 @@ export default () => (
     <div className="grid-wrapper">
       <div className="col-12">
         <header className="major">
-          <h2>Kind Words from Trustworthy People</h2>
+          <h2>What Others Are Saying</h2>
         </header>
       </div>
       <div className="col-3">

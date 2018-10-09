@@ -32,7 +32,6 @@ class Homepage extends React.Component {
     this.setState = this.setState.bind(this);
   }
   render() {
-    console.log('STATE', this.state);
     const siteTitle = "Wonderment, Inc. | Experiment with Wonder";
 
     return (

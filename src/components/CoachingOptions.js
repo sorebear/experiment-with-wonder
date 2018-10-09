@@ -1,9 +1,10 @@
 import React from 'react';
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
 import Link from 'gatsby-link';
 
-import clock from '../assets/images/clock.jpg';
+import oneOnOne from '../assets/images/coffee-one-on-one-coaching.jpg';
+import group from '../assets/images/coffee-group-coaching.jpg';
+// import workshop from '../assets/images/coffee-workshop.jpg';
+import workshop from '../assets/images/paint-workshop.jpg';
 
 export default () => (
   <section id="three" className="main style1 special">
@@ -17,7 +18,7 @@ export default () => (
       <div className="col-4">
         <div className="header-image"></div>
         <span className="image fit">
-          <div className="section-header-image" style={{ background: `url(${clock})`}}/>
+          <div className="section-header-image" style={{ background: `url(${oneOnOne})`}}/>
         </span>
         <h3>ONE-ON-ONE COACHING</h3>
         <p>Start immediately with an experienced coach. Non-Profit rates available</p>
@@ -26,7 +27,9 @@ export default () => (
         </ul>
       </div>
       <div className="col-4">
-        <span className="image fit"><img src={pic03} alt="" /></span>
+        <span className="image fit">
+        <div className="section-header-image" style={{ background: `url(${group})`}}/>
+        </span>
         <h3>GROUP COACHING</h3>
         <p>Join in with 4-6 other individuals plus your coach.</p>
         <ul className="actions">
@@ -34,7 +37,9 @@ export default () => (
         </ul>
       </div>
       <div className="col-4">
-        <span className="image fit"><img src={pic04} alt="" /></span>
+        <span className="image fit">
+          <div className="section-header-image" style={{ background: `url(${workshop})`}}/>
+        </span>
         <h3>LIVE WORKSHOP</h3>
         <p>“The Clearing” Two-Day leadership training for corporate teams and non-profits.</p>
         <ul className="actions">
