@@ -1,12 +1,8 @@
 import React from 'react';
-import caitlinBaird from '../assets/images/caitlin-baird.jpg';
 
 export default () => (
   <section id="one" className="main style1">
     <div className="grid-wrapper">
-      {/* <div className="col-4">
-        <span className="image fit"><img src={caitlinBaird} alt="" /></span>
-      </div> */}
       <div className="col-12">
         <header className="major">
           <h2>Free Strategy Session</h2>

@@ -123,6 +123,54 @@ div.faq-accordion {
   }
 }
 
+div.rc-collapse {
+  & > .rc-collapse-item {
+    & > .rc-collapse-header {
+      position: relative;
+
+      i {
+        visibility: hidden;
+      
+        &::before {
+          content: '';
+          visibility: visible;
+          position: absolute;
+          background-image: url('../images/cog.svg');
+          width: 25px;
+          height: 25px;
+          color: orange;
+          top: 50%;
+          transform: translateY(-50%) rotate(0deg);
+          transition: transform .3s;
+          transform-style: preserve-3d;
+          backface-visibility: hidden;
+          left: 12px;
+        }
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &.rc-collapse-item-active {
+      & > .rc-collapse-header {
+        i::before {
+          transform: translateY(-50%) rotate(215deg);
+        }
+      }
+    }
+
+    & > .rc-collapse-content {
+      padding: 0 32px;
+
+      @media screen and (min-width: 1280px) {
+        padding: 0 48px;
+      }
+    }
+  }
+}
+
 div.get-to-know-accordion {
   border: none;
   background-color: transparent;
@@ -670,8 +718,9 @@ div.get-to-know-accordion {
 
 		&.fit {
 			display: block;
-			margin: 0 0 _size(element-margin) 0;
-			width: 100%;
+			margin: 0 auto _size(element-margin) auto;
+      width: 100%;
+      max-width: 350px;
 
 			img {
 				width: 100%;

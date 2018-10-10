@@ -45,8 +45,8 @@ class Coaching extends React.Component {
         </Header>
         <Testimonials />
         <CoachingWhatsIncluded />
-        <HowItWorks />
-        <WhatToExpect />
+        <HowItWorks setPageState={this.setState} />
+        <WhatToExpect setPageState={this.setState} />
         <CoachingGetStarted />
         <GetToKnow />
         <FAQs />

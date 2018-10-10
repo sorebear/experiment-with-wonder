@@ -6,13 +6,10 @@ export default () => (
       <div className="col-12">
         <header className="major align-center">
           <h2>What's Included</h2>
-          <p>
-            Curiosity-Driven Coaching that Explores New Possibilites for the way you Live, Love, and Engage
-          </p>
         </header>
-        <p>
+        <h3>
           Each month you receive:
-        </p>
+        </h3>
         <ul>
           <li>
             Up to four, 50-minute coaching calls with Caitlin
