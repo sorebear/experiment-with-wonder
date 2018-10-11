@@ -7,7 +7,7 @@ exports.handler = (event, context, callback) => {
     service: 'gmail',
     auth: {
       type: 'OAuth2',
-      user: 'caitlin@caitlinbaird.com',
+      user: 'caitbaird@gmail.com',
       clientId: '118365106713-di12r3mehr3kcu1of5d8619e6q6p3n1b.apps.googleusercontent.com',
       clientSecret: process.env.GMAIL_CLIENT_SECRET,
       refreshToken: '1/5eSLxOl_tkf0RFPfPEgWNx2wa1WwwLKSU98sP_U1z9o'
