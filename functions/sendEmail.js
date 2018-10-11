@@ -7268,8 +7268,8 @@ exports.handler = (event, context, callback) => {
     }
   });
   const mailOptions = {
-    from: 'caitbaird@gmail.com',
-    to: process.env.SEND_TO_EMAIL,
+    from: 'caitlin@caitlinbaird.com',
+    to: 'caitbaird@gmail.com',
     subject: `New caitlinbaird.com Message from ${body.name}`,
     text: `SENDER NAME: ${body.name}, SENDER EMAIL: ${body.email}, MESSAGE: ${body.message}`,
     html: `<p><strong>Sender Name:</strong> ${body.name}</p>
