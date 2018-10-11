@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Wonderment, Inc. | Experiment with Wonder",
+    title: "Experiment with Wonder | Caitlin Baird",
     author: "Caitlin Baird",
     description: "Transformation Coaching to Explore Life's Possibilities."
   },
@@ -18,6 +18,7 @@ module.exports = {
         icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-favicon',
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],

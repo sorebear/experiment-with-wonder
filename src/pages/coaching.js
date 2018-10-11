@@ -12,7 +12,7 @@ import GetToKnow from '../components/GetToKnow';
 import FAQs from '../components/FAQs';
 import coachingHero from '../assets/images/coaching-hero.jpg';
 
-const siteTitle = 'Wonderment, Inc. | Individual and Group Coaching';
+const siteTitle = 'Individual and Group Coaching | Experiment With Wonder';
 
 class Coaching extends React.Component {
   constructor(props) {

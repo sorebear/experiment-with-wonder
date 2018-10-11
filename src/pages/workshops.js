@@ -10,7 +10,7 @@ import TheClearing from '../components/TheClearing';
 import WineAndWonder from '../components/WineAndWonder';
 import workshopHero from '../assets/images/workshop-hero.jpg';
 
-const siteTitle = 'Wonderment, Inc. | Workshops';
+const siteTitle = 'Workshops | Experiment With Wonder';
 
 class Coaching extends React.Component {
   constructor(props) {

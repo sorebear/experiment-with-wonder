@@ -16,15 +16,13 @@ exports.handler = (event, context, callback) => {
 
   const mailOptions = {
     from: 'caitlin@caitlinbaird.com',
-    to: 'caitbaird@gmail.com',
+    to: 'caitlin@caitlinbaird.com',
     subject: `New caitlinbaird.com Message from ${body.name}`,
     text: `SENDER NAME: ${body.name}, SENDER EMAIL: ${body.email}, MESSAGE: ${body.message}`,
     html: `<p><strong>Sender Name:</strong> ${body.name}</p>
           <p><strong>Sender Email:</strong> ${body.email}</p>
-          <br>
           <p><strong>Message:</strong></p>
           <p>${body.message}</p>
-          <br>
           <p><strong>Interested in:</strong></p>
           ${body.interestOneOnOne ? '<p>One-on-One Coaching</p>' : ''}
           ${body.interestGroup ? '<p>Group Coaching</p>' : ''}

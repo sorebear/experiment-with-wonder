@@ -32,7 +32,7 @@ class Homepage extends React.Component {
   }
 
   render() {
-    const siteTitle = "Wonderment, Inc. | Experiment with Wonder";
+    const siteTitle = "Home | Experiment With Wonder";
 
     return (
       <Layout>
