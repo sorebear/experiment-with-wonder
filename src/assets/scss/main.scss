@@ -717,11 +717,14 @@ div.get-to-know-accordion {
 			}
 		}
 
+		&.max-width-350 {
+			max-width: 350px;
+		}
+
 		&.fit {
 			display: block;
 			margin: 0 auto _size(element-margin) auto;
       width: 100%;
-      max-width: 350px;
 
 			img {
 				width: 100%;

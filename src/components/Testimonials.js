@@ -14,7 +14,7 @@ export default () => (
         </header>
       </div>
       <div className="col-4">
-        <span className="image fit"><img src={johnOrtberg} alt="John Ortberg" /></span>
+        <span className="image fit max-width-350"><img src={johnOrtberg} alt="John Ortberg" /></span>
         <h3 style={{ marginBottom: 0 }}>John Ortberg</h3>
         <p style={{ opacity: .65 }}>
           <em>
@@ -24,7 +24,7 @@ export default () => (
         <p>"Caitlin has a wonderful gift for being able to communicate in a way that changes lives.  She is thoughtful, honest, warm, reflective, and deeply challenging."</p>
       </div>
       <div className="col-4">
-        <span className="image fit"><img src={jeanMarieJobs} alt="Jean Marie Jobs" /></span>
+        <span className="image fit max-width-350"><img src={jeanMarieJobs} alt="Jean Marie Jobs" /></span>
         <h3 style={{ marginBottom: 0 }}>Jean Marie Jobs</h3>
         <p style={{ opacity: .65 }}>
           <em>
@@ -34,7 +34,7 @@ export default () => (
         <p>"Caitlin’s coaching and training style is both creative and insightful. She continually challenges her self to go beyond perceived limitations and is courageous in her stand for others. She is an absolute delight!"</p>
       </div>
       <div className="col-4">
-        <span className="image fit"><img src={steveCarter} alt="Steve Carter" /></span>
+        <span className="image fit max-width-350"><img src={steveCarter} alt="Steve Carter" /></span>
         <h3 style={{ marginBottom: 0 }}>Steve Carter</h3>
         <p style={{ opacity: .65 }}>
           <em>
