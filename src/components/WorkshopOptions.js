@@ -9,7 +9,7 @@ export default () => (
     <div className="grid-wrapper">
       <div className="col-12">
         <header className="major">
-          <h2>How Workshop Supports You Best?</h2>
+          <h2>Which Workshop Supports You Best?</h2>
         </header>
       </div>
 
