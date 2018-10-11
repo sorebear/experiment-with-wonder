@@ -1,4 +1,5 @@
 import React from 'react';
+import { handleSubmit } from '../util/handleSubmit';
 
 export default ({pageState, setPageState }) => {
   const { contactName, contactEmail, contactMessage, interestOneOnOne, interestGroup, interestWorkshop } =pageState;
@@ -9,7 +10,7 @@ export default ({pageState, setPageState }) => {
           <h2>Contact</h2>
         </header>
       </div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="grid-wrapper">
           <div className="col-12">
             <label>Name</label>

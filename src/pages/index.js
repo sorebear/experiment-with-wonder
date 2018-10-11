@@ -1,6 +1,5 @@
 import React from "react";
 import Helmet from "react-helmet";
-
 import Layout from '../components/layout';
 
 import AboutCaitlin from '../components/AboutCaitlin';
@@ -31,6 +30,7 @@ class Homepage extends React.Component {
 
     this.setState = this.setState.bind(this);
   }
+
   render() {
     const siteTitle = "Wonderment, Inc. | Experiment with Wonder";
 

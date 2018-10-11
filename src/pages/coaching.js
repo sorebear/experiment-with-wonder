@@ -30,6 +30,8 @@ class Coaching extends React.Component {
     this.setState = this.setState.bind(this);
   }
 
+  
+
   render() {
     return (
       <Layout>
