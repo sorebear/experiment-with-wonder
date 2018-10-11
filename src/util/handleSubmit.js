@@ -1,9 +1,9 @@
 import axios from 'axios';
 import config from '../client-config';
 
-export const handleSubmit = (e) => {
+export const handleSubmit = (e, pageState) => {
   e.preventDefault();
-  const { contactName, contactEmail, contactMessage, interestOneOnOne, interestGroup, interestWorkshop} = this.state;
+  const { contactName, contactEmail, contactMessage, interestOneOnOne, interestGroup, interestWorkshop} = pageState;
   axios.post(config.email.apiUrl, {
     type: 'newMessage',
     name: contactName,

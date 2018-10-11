@@ -10,7 +10,7 @@ export default ({pageState, setPageState }) => {
           <h2>Contact</h2>
         </header>
       </div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => handleSubmit(e, pageState)}>
         <div className="grid-wrapper">
           <div className="col-12">
             <label>Name</label>
