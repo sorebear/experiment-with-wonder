@@ -4,7 +4,7 @@ import smoothscroll from 'smoothscroll';
 import clearing from '../assets/images/clearing.jpg';
 import wine from '../assets/images/wine-and-cheese.jpg';
 
-export default () => (
+const WorkshopOptions = () => (
   <section id="three" className="main style1 special">
     <div className="grid-wrapper">
       <div className="col-12">
@@ -44,3 +44,5 @@ export default () => (
     </div>
   </section>
 );
+
+export default WorkshopOptions;

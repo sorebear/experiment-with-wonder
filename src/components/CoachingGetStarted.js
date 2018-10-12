@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const CoachingGetStarted = () => (
   <section id="one" className="main style1">
     <div className="grid-wrapper">
       <div className="col-12">
@@ -32,3 +32,5 @@ export default () => (
     </div>
   </section>
 );
+
+export default CoachingGetStarted;

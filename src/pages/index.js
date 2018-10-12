@@ -1,5 +1,5 @@
-import React from "react";
-import Helmet from "react-helmet";
+import React from 'react';
+import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 
 import AboutCaitlin from '../components/AboutCaitlin';
@@ -11,8 +11,8 @@ import HowItWorks from '../components/HowItWorks';
 import Testimonials from '../components/Testimonials';
 import WonderWhatsNext from '../components/WonderWhatsNext';
 import WonderYourWay from '../components/WonderYourWay';
-import AreYouMissoungOut from "../components/AreYouMissoungOut";
-import Header from "../components/Header";
+import AreYouMissoungOut from '../components/AreYouMissoungOut';
+import Header from '../components/Header';
 import header from '../assets/images/header.jpg';
 
 class Homepage extends React.Component {
@@ -26,13 +26,13 @@ class Homepage extends React.Component {
       interestOneOnOne: false,
       interestGroup: false,
       interestWorkshop: false
-    }
+    };
 
     this.setState = this.setState.bind(this);
   }
 
   render() {
-    const siteTitle = "Home | Experiment With Wonder";
+    const siteTitle = 'Home | Experiment With Wonder';
 
     return (
       <Layout>
@@ -44,8 +44,10 @@ class Homepage extends React.Component {
           backgroundImg={header}
         >
           <span className="icon major fa-flask"></span>
-          <h1><span style={{fontSize: '2rem'}}>Experiment with Wonder</span><br style={{ display: 'inline' }} />
-          <strong>Transformational Coaching<br />to Explore&nbsp;Life’s&nbsp;Possibilities</strong></h1>
+          <h1>
+            <span style={{fontSize: '2rem'}}>Experiment with Wonder</span><br style={{ display: 'inline' }} />
+            <strong>Transformational Coaching<br />to Explore&nbsp;Life’s&nbsp;Possibilities</strong>
+          </h1>
         </Header>
         <GetCurious />
         <AreYouMissoungOut />

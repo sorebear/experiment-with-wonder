@@ -3,7 +3,7 @@ import Collapse from 'rc-collapse';
 import 'rc-collapse/assets/index.css';
 
 
-export default () => (
+const FAQs = () => (
   <section className="main style1">
     <div className="grid-wrapper">
       <div className="col-12 align-center">
@@ -83,4 +83,6 @@ export default () => (
     </div>
   </section>
 );
+
+export default FAQs;
 

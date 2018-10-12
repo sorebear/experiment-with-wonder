@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import gear from '../assets/images/gear.svg';
 import levers from '../assets/images/levers.jpg';
 import CtaButton from '../components/CtaButton';
@@ -7,9 +8,9 @@ const backgroundImageStyle = {
   backgroundImage: `linear-gradient(rgba(51, 51, 51, .8), rgba(51, 51, 51, .8)), url(${levers})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover'
-}
+};
 
-export default ({ setPageState }) => (
+const HowItWorks = ({ setPageState }) => (
   <section id="two" className="main style2" style={backgroundImageStyle}>
     <div className="grid-wrapper align-center">
       <div className="col-12">
@@ -25,7 +26,7 @@ export default ({ setPageState }) => (
           <h2>1</h2>
         </span>
         <h3>Free Session</h3>
-        <p>"Try on" coaching without any pressure or&nbsp;obligation.</p>
+        <p>&quot;Try on&quot; coaching without any pressure or&nbsp;obligation.</p>
       </div>
       <div className="col-4 gear-container">
         <span className="image fit">
@@ -41,7 +42,7 @@ export default ({ setPageState }) => (
           <h2>3</h2>
         </span>
         <h3>Go</h3>
-        <p>Go after that new life you're committed to&nbsp;create.</p>
+        <p>Go after that new life you&apos;re committed to&nbsp;create.</p>
       </div>
       <div className="col-12">
         <ul className="actions uniform">
@@ -53,3 +54,9 @@ export default ({ setPageState }) => (
     </div>
   </section>
 );
+
+export default HowItWorks;
+
+HowItWorks.propTypes = {
+  setPageState: PropTypes.func
+};
