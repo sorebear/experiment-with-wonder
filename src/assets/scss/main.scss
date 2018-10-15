@@ -118,8 +118,10 @@ div.faq-accordion {
 
   & > .rc-collapse-item {
     & > .rc-collapse-header {
-      padding: 10px 20px;
-      box-sizing: content-box;
+      padding: 19px 19px 19px 48px;
+			box-sizing: content-box;
+			height: auto;
+			line-height: 1.25em;
     }
   }
 }
@@ -127,10 +129,12 @@ div.faq-accordion {
 div.rc-collapse {
   & > .rc-collapse-item {
     & > .rc-collapse-header {
-      position: relative;
+			position: relative;
+			text-indent: 0;
 
       i {
-        visibility: hidden;
+				visibility: hidden;
+				margin-right: -6px;
       
         &::before {
           content: '';
@@ -1328,11 +1332,15 @@ div.get-to-know-accordion {
 			}
 
 		/* Header */
-
 			#header {
 				@include padding(6em, 0, (0,0,_size(element-margin),0));
 			}
 
+			h1 {
+				span.space {
+					display: none;
+				}
+			}
 	}
 
 /* Large */
@@ -1348,6 +1356,10 @@ div.get-to-know-accordion {
 			h1, h2, h3, h4, h5, h6 {
 				br {
 					display: none;
+				}
+
+				span.space {
+					display: inline;
 				}
 			}
 

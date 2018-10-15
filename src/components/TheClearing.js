@@ -24,7 +24,11 @@ const TheClearing = ({ setPageState }) => (
             </p>
           </header>
           <p><em>Available for corporate and non-profit settings</em></p>
-          <CtaButton buttonType="clearing" setPageState={setPageState} />
+          <ul className="actions uniform">
+            <li>
+              <CtaButton buttonType="clearing" setPageState={setPageState} />
+            </li>
+          </ul>
         </div>
       </div>
     </section>

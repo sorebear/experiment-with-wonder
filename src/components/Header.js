@@ -21,6 +21,7 @@ const Header = ({ setPageState, children, buttonType, backgroundImg }) => (
 export default Header;
 
 Header.propTypes = {
+  children: PropTypes.element,
   setPageState: PropTypes.func,
   buttonType: PropTypes.string,
   backgroundImg: PropTypes.string

@@ -32,12 +32,16 @@ export default class GetToKnow extends React.Component {
                 Get To Know Your Coach
               </h2>
             </header>
-            <button
-              className="button"
-              onClick={this.toggleAccordion}
-            >
-              About Caitlin
-            </button>
+            <ul className="actions uniform">
+              <li>
+                <button
+                  className="button"
+                  onClick={this.toggleAccordion}
+                >
+                  About Caitlin
+                </button>
+              </li>
+            </ul>
           </div>
           <div className="col-12">
             <Collapse

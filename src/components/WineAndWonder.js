@@ -23,7 +23,11 @@ const WineAndWonder = ({ setPageState }) => (
               a creativity workshop to reveal the artist within
             </p>
           </header>
-          <CtaButton buttonType="wineAndWonder" setPageState={setPageState} />
+          <ul className="actions uniform">
+            <li>
+              <CtaButton buttonType="wineAndWonder" setPageState={setPageState} />
+            </li>
+          </ul>
         </div>
       </div>
     </section>
