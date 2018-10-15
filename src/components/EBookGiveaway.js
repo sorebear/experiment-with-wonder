@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default ({ pageState, setPageState }) => (
+const EBookGiveaway = ({ pageState, setPageState }) => (
   <section id="four" className="main style2 style4 special">
     <div className="container">
       <header className="major">
@@ -9,7 +10,7 @@ export default ({ pageState, setPageState }) => (
     </div>
     <div className="grid-wrapper">
       <div className="col-12">
-        <p>Download my free e-book and start "wondering" now.</p>
+        <p>Download my free e-book and start &quot;wondering&quot; now.</p>
         <form>
           <label className="align-left" style={{ color: 'rgba(255, 255, 255, .75)' }}>Email</label>
           <input
@@ -26,3 +27,10 @@ export default ({ pageState, setPageState }) => (
     </div>
   </section>
 );
+
+export default EBookGiveaway;
+
+EBookGiveaway.propTypes = {
+  setPageState: PropTypes.func,
+  pageState: PropTypes.object
+};

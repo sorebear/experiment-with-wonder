@@ -5,9 +5,9 @@ const backgroundImageStyle = {
   backgroundImage: `linear-gradient(rgba(51, 51, 51, .6), rgba(51, 51, 51, .6)), url(${aboutCaitlin})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover'
-}
+};
 
-export default () => (
+const AboutCaitlin = () => (
   <section id="two" className="main style2" style={backgroundImageStyle}>
     <div className="grid-wrapper align-center">
       <div className="col-12">
@@ -39,3 +39,5 @@ export default () => (
     </div>
   </section>
 );
+
+export default AboutCaitlin;

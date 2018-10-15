@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from "react-helmet";
+import Helmet from 'react-helmet';
 import Header from '../components/Header';
 import Layout from '../components/layout';
 import Testimonials from '../components/Testimonials';
@@ -25,7 +25,7 @@ class Coaching extends React.Component {
       interestOneOnOne: false,
       interestGroup: false,
       interestWorkshop: false
-    }
+    };
 
     this.setState = this.setState.bind(this);
   }
@@ -42,8 +42,10 @@ class Coaching extends React.Component {
           backgroundImg={coachingHero}
         >
           <span className="icon major fa-flask"></span>
-          <h1><span style={{fontSize: '2rem'}}>Experiment with Wonder</span><br style={{ display: 'inline' }} />
-          <strong>One-on-One and Group Coaching<br />to Explore&nbsp;Life’s&nbsp;Possibilities</strong></h1>
+          <h1>
+            <span style={{fontSize: '2rem'}}>Experiment with Wonder</span><br style={{ display: 'inline' }} />
+            <strong>One-on-One and Group Coaching<br /><span className="space">&nbsp;</span>to Explore&nbsp;Life’s&nbsp;Possibilities</strong>
+          </h1>
         </Header>
         <Testimonials />
         <CoachingWhatsIncluded />
@@ -56,6 +58,6 @@ class Coaching extends React.Component {
       </Layout>
     );
   }
-};
+}
 
 export default Coaching;

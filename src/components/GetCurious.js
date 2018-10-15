@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const GetCurious = () => (
   <section id="four" className="main style1 special sub-header-icons">
     <div className="grid-wrapper">
       <div className="col-4">
@@ -18,3 +18,5 @@ export default () => (
     </div>
   </section>
 );
+
+export default GetCurious;

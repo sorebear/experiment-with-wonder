@@ -7,19 +7,19 @@ const backgroundImageStyle = {
   backgroundImage: `linear-gradient(rgba(51, 51, 51, .6), rgba(51, 51, 51, .6)), url(${aboutCaitlin})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover'
-}
+};
 
 export default class GetToKnow extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       activeKey: null,
-    }
+    };
     this.toggleAccordion = this.toggleAccordion.bind(this);
   }
 
   toggleAccordion() {
-    this.setState({ activeKey: this.state.activeKey ? null : ['0'] })
+    this.setState({ activeKey: this.state.activeKey ? null : ['0'] });
   }
 
   render() {
@@ -32,12 +32,16 @@ export default class GetToKnow extends React.Component {
                 Get To Know Your Coach
               </h2>
             </header>
-            <button
-              className="button"
-              onClick={this.toggleAccordion}
-            >
-              About Caitlin
-            </button>
+            <ul className="actions uniform">
+              <li>
+                <button
+                  className="button"
+                  onClick={this.toggleAccordion}
+                >
+                  About Caitlin
+                </button>
+              </li>
+            </ul>
           </div>
           <div className="col-12">
             <Collapse
@@ -68,7 +72,7 @@ export default class GetToKnow extends React.Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
-};
+}
 

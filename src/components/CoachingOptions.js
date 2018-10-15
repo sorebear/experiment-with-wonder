@@ -3,10 +3,9 @@ import Link from 'gatsby-link';
 
 import oneOnOne from '../assets/images/coffee-one-on-one-coaching.jpg';
 import group from '../assets/images/coffee-group-coaching.jpg';
-// import workshop from '../assets/images/coffee-workshop.jpg';
 import workshop from '../assets/images/paint-workshop.jpg';
 
-export default () => (
+const CoachingOptions = () => (
   <section id="three" className="main style1 special">
     <div className="grid-wrapper">
       <div className="col-12">
@@ -28,12 +27,12 @@ export default () => (
       </div>
       <div className="col-4">
         <span className="image fit">
-        <div className="section-header-image" style={{ background: `url(${group})`}}/>
+          <div className="section-header-image" style={{ background: `url(${group})`}}/>
         </span>
         <h3>GROUP COACHING</h3>
         <p>Join in with 4-6 other individuals plus your coach.</p>
         <ul className="actions">
-        <li><Link to="./coaching" className="button">More</Link></li>
+          <li><Link to="./coaching" className="button">More</Link></li>
         </ul>
       </div>
       <div className="col-4">
@@ -43,9 +42,11 @@ export default () => (
         <h3>LIVE WORKSHOP</h3>
         <p>“The Clearing” Two-Day leadership training for corporate teams and non-profits.</p>
         <ul className="actions">
-        <li><Link to="./workshops" className="button">More</Link></li>
+          <li><Link to="./workshops" className="button">More</Link></li>
         </ul>
       </div>
     </div>
   </section>
 );
+
+export default CoachingOptions;

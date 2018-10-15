@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { handleSubmit } from '../util/handleSubmit';
 
-export default ({pageState, setPageState }) => {
-  const { contactName, contactEmail, contactMessage, interestOneOnOne, interestGroup, interestWorkshop } =pageState;
+const Contact = ({ pageState, setPageState }) => {
+  const { contactName, contactEmail, contactMessage, interestOneOnOne, interestGroup, interestWorkshop } = pageState;
   return (
     <section id="contact" className="main style1">
       <div className="container">
@@ -33,7 +34,7 @@ export default ({pageState, setPageState }) => {
               value={contactMessage}
               onChange={(e) => setPageState({ contactMessage: e.target.value })}
             />
-            <label>Coaching I'm interested in (Select all that apply)</label>
+            <label>Coaching I&apos;m interested in (Select all that apply)</label>
           </div>
         </div>
         <div className="grid-wrapper align-left-in-desktop">
@@ -82,4 +83,11 @@ export default ({pageState, setPageState }) => {
       </form>
     </section>
   );
+};
+
+export default Contact;
+
+Contact.propTypes = {
+  setPageState: PropTypes.func,
+  pageState: PropTypes.object
 };
