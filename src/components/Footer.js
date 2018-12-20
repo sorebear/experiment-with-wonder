@@ -10,7 +10,7 @@ const Footer = () => (
       <li><a href="#" className="icon alt fa-envelope"><span className="label">Email</span></a></li> */}
     </ul>
     <ul className="copyright">
-      <li>&copy; Wonderment, Inc.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      <li>&copy; Caitlin Baird</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
     </ul>
   </section>
 );
