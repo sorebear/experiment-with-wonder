@@ -1,6 +1,6 @@
 import React from 'react';
 
-import amyMaxwell from '../assets/images/amy-maxwell.png';
+import amyMaxwell from '../assets/images/amy-maxwell-new.png';
 import jeanMarieJobs from '../assets/images/jean-marie-jobs.png';
 import johnOrtberg from '../assets/images/john-ortberg.png';
 import steveCarter from '../assets/images/steve-carter.png';
