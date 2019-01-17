@@ -55,13 +55,12 @@
 	display: flex;
 	justify-content: flex-end;
 	z-index: 10;
-
 	top: 24px;
 	right: auto;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
-	max-width: 1280px;
+	left: calc(100% - 30px);
+	transform: translateX(-100%);
+	// width: 100%;
+	// max-width: 1280px;
 	text-align: right;
 
 	button {
@@ -74,11 +73,19 @@
 		&:hover {
 			background-color: lighten(_palette(dark-orange), 15%) !important;
 		}
-	} 
+	}
+
+	@media screen and (min-width: 1181px) {
+		left: calc(50% + 560px);
+	}
+
+	@media screen and (min-width: 1681px) {
+		left: calc(50% + 640px);
+	}
 }
 
 .desktop-only {
-	@media screen and (max-width: 979px) {
+	@media screen and (max-width: 980px) {
 		display: none;
 	}
 }
@@ -118,7 +125,7 @@ div.faq-accordion {
 
   & > .rc-collapse-item {
     & > .rc-collapse-header {
-      padding: 19px 19px 19px 48px;
+      padding: 19px 19px 19px 54px;
 			box-sizing: content-box;
 			height: auto;
 			line-height: 1.25em;
@@ -127,6 +134,10 @@ div.faq-accordion {
 }
 
 div.rc-collapse {
+	@media screen and (max-width: 480px) {
+		margin-bottom: 2em;
+	}
+
   & > .rc-collapse-item {
     & > .rc-collapse-header {
 			position: relative;

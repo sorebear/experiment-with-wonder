@@ -20,7 +20,7 @@ const AboutCaitlin = () => (
       <div className="col-2"></div>
       <div className="col-8 align-left">
         <p>
-          Caitlin experienced her first transformational training the winter of 2012 and has been pursuing the transformational life ever since. She received her Bachelor’s in Business from Belmont University (Nashville, TN), completed her Master’s at Talbot School of Theology. She has been certified by GAP (link) as both a trainer and coach.
+          Caitlin experienced her first transformational training the winter of 2012 and has been pursuing the transformational life ever since. She received her Bachelor’s in Business from Belmont University (Nashville, TN), completed her Master’s at Talbot School of Theology. She has been certified by <a href="https://gapcommunity.com/" target="_blank" rel="noopener noreferrer">GAP</a> as both a trainer and coach.
         </p>
         <p>
           In addition to her own coaching and training clients, Caitlin is a full-time corporate trainer for an international healthcare company. Here, she designs both character and leadership trainings and travels the US to facilitate said trainings.
