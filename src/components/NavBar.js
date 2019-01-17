@@ -6,24 +6,52 @@ import Logo from './Logo';
 class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.updateHeader = this.updateHeader.bind(this);
+    this.listenForHittingTopOfPage = this.listenForHittingTopOfPage.bind(this);
+    this.listenForLeavingTopOfPage = this.listenForLeavingTopOfPage.bind(this);
     this.state = {
-      scrollState: 'unscrolled'
+      scrollState: 'loading'
     };
   }
 
   componentDidMount() {
-    document.addEventListener('scroll', this.updateHeader);
+    window.setTimeout(() => {
+      if (window.pageYOffset === 0) {
+        document.addEventListener('scroll', this.listenForLeavingTopOfPage);
+        this.setState({
+          scrollState: 'unscrolled',
+        });
+      } else {
+        document.addEventListener('scroll', this.listenForHittingTopOfPage);
+      }
+    }, 1);
   }
 	
   componentWillUnmount() {
-    document.removeEventListener('scroll', this.updateHeader);
+    if (this.state.scrollState === 'scrolled') {
+      document.removeEventListener('scroll', this.listenForHittingTopOfPage);
+    } else {
+      document.removeEventListener('scroll', this.listenForLeavingTopOfPage);
+    }
   }
 
-  updateHeader() {
-    this.setState({
-      scrollState: window.pageYOffset !== 0 ? 'scrolled' : 'unscrolled'
-    });
+  listenForHittingTopOfPage() {
+    if (window.pageYOffset === 0) {
+      document.removeEventListener('scroll', this.listenForHittingTopOfPage);
+      document.addEventListener('scroll', this.listenForLeavingTopOfPage);
+      this.setState({
+        scrollState: 'unscrolled',
+      });
+    }
+  }
+
+  listenForLeavingTopOfPage() {
+    if (window.pageYOffset !== 0) {
+      document.removeEventListener('scroll', this.listenForLeavingTopOfPage);
+      document.addEventListener('scroll', this.listenForHittingTopOfPage);
+      this.setState({
+        scrollState: 'scrolled',
+      });
+    }
   }
 
   handleSmoothScroll(anchor) {
@@ -39,22 +67,11 @@ class NavBar extends Component {
       >
         <div style={styles.contentContainerStyle}>
           <div 
-            onClick={() => this.handleSmoothScroll('home')}
+            // onClick={() => this.handleSmoothScroll('home')}
             style={{ cursor: 'pointer' }}
           >
             <Logo />
           </div>
-          {/* <ul className="header__nav" style={styles.navStyle}>
-						<li onClick={() => this.handleSmoothScroll('my-work')} style={styles.listItemStyle}>
-							<h5 className="link-on-color" style={styles.navTextStyle}>My Work</h5>
-						</li>
-						<li onClick={() => this.handleSmoothScroll('about-me')} style={styles.listItemStyle}>
-							<h5 className="link-on-color" style={styles.navTextStyle}>About Me</h5>
-						</li>
-						<li onClick={() => this.handleSmoothScroll('lets-connect')} style={styles.listItemStyle}>
-							<h5 className="link-on-color" style={styles.navTextStyle}>Let's Connect</h5>
-						</li>
-					</ul> */}
         </div>
       </div>
     );
@@ -65,17 +82,11 @@ export default NavBar;
 
 const styles = {
   headerStyle: {
-    background: 'transparent',
     position: 'fixed',
+    zIndex: 1,
     top: 0,
-    left: 0,
-    width: '100%',
-    zIndex: '1'
   },
   contentContainerStyle: {
-    padding: '20px 24px',
-    maxWidth: '1160px',
-    margin: '0 auto',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center'

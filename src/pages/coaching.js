@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import Header from '../components/Header';
 import Layout from '../components/layout';
@@ -41,11 +41,13 @@ class Coaching extends React.Component {
           buttonType="coaching"
           backgroundImg={coachingHero}
         >
-          <span className="icon major fa-flask"></span>
-          <h1>
-            <span style={{fontSize: '2rem'}}>Experiment with Wonder</span><br style={{ display: 'inline' }} />
-            <strong>One-on-One and Group Coaching<br /><span className="space">&nbsp;</span>to Explore&nbsp;Life’s&nbsp;Possibilities</strong>
-          </h1>
+          <Fragment>
+            <span className="icon major fa-flask"></span>
+            <h1>
+              <span style={{fontSize: '2rem'}}>Experiment with Wonder</span><br style={{ display: 'inline' }} />
+              <strong>One-on-One and Group Coaching<br /><span className="space">&nbsp;</span>to Explore&nbsp;Life’s&nbsp;Possibilities</strong>
+            </h1>
+          </Fragment>
         </Header>
         <Testimonials />
         <CoachingWhatsIncluded />

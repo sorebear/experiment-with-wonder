@@ -19,12 +19,6 @@ const Logo = () => (
             Baird
           </h5>
         </div>
-        {/* <div style={styles.verticalLineStyle} className="logo__vertical-line" />
-         <div style={styles.jobTitlesContainerStyle}>
-            <h3 style={styles.jobTitleStyle} className="logo__job-title logo__job-title--1">Experiment</h3>
-            <h3 style={styles.jobTitleStyle} className="logo__job-title logo__job-title--2">With</h3>
-            <h3 style={styles.jobTitleStyle} className="logo__job-title logo__job-title--3">Wonder</h3>
-         </div> */}
       </div>
     </Link>
   </div>
