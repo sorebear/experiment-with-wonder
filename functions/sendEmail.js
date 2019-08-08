@@ -7262,9 +7262,9 @@ exports.handler = (event, context, callback) => {
     auth: {
       type: 'OAuth2',
       user: 'caitbaird@gmail.com',
-      clientId: '118365106713-di12r3mehr3kcu1of5d8619e6q6p3n1b.apps.googleusercontent.com',
+      clientId: '819400783143-69fspin3nm5lqqve0erkfgspj1fiq5uf.apps.googleusercontent.com',
       clientSecret: process.env.GMAIL_CLIENT_SECRET,
-      refreshToken: '1/5eSLxOl_tkf0RFPfPEgWNx2wa1WwwLKSU98sP_U1z9o'
+      refreshToken: '1/JNDS_ibxgHAasJNGgE8cA8sCamooWtSfPllj7zZVgek'
     }
   });
   const mailOptions = {
@@ -7295,8 +7295,6 @@ exports.handler = (event, context, callback) => {
         body: JSON.stringify(info.response)
       });
     }
-
-    ;
   });
 };
 

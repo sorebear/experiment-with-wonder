@@ -5,7 +5,6 @@ import Layout from '../components/layout';
 import AboutCaitlin from '../components/AboutCaitlin';
 import CoachingOptions from '../components/CoachingOptions';
 import Contact from '../components/Contact';
-// import EBookGiveaway from '../components/EBookGiveaway';
 import GetCurious from '../components/GetCurious';
 import HowItWorks from '../components/HowItWorks';
 import Testimonials from '../components/Testimonials';

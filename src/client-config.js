@@ -5,6 +5,6 @@ const config = {
       'caitlin@caitlinbaird.com',
     ]
   }
-}
+};
 
 export default config;
