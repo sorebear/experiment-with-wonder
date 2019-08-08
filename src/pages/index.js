@@ -24,7 +24,9 @@ class Homepage extends React.Component {
       contactMessage: '',
       interestOneOnOne: false,
       interestGroup: false,
-      interestWorkshop: false
+      interestWorkshop: false,
+      messageSent: false,
+      error: false,
     };
 
     this.setState = this.setState.bind(this);
