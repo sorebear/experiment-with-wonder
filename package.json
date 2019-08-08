@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "gatsby": "^2.0.0",
     "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-manifest": "^2.0.2",
@@ -38,6 +38,7 @@
     "concurrently": "^4.0.1",
     "eslint": "^5.7.0",
     "eslint-plugin-react": "^7.11.1",
+    "eslint-config-airbnb": "^17.1.1",
     "netlify-lambda": "^0.4.0",
     "prettier": "^1.14.2"
   },

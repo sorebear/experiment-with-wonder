@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { handleSubmit } from '../util/handleSubmit';
 
 const Contact = ({ pageState, setPageState }) => {
-  const { contactName, contactEmail, contactMessage, interestOneOnOne, interestGroup, interestWorkshop } = pageState;
+  const { contactName, contactEmail, contactMessage, interestOneOnOne, interestGroup, interestWorkshop, messageSent, error } = pageState;
   return (
     <section id="contact" className="main style1">
       <div className="container">
@@ -11,7 +11,7 @@ const Contact = ({ pageState, setPageState }) => {
           <h2>Contact</h2>
         </header>
       </div>
-      <form onSubmit={(e) => handleSubmit(e, pageState)}>
+      <form onSubmit={(e) => handleSubmit(e, pageState, setPageState)}>
         <div className="grid-wrapper">
           <div className="col-12">
             <label>Name</label>
@@ -76,7 +76,15 @@ const Contact = ({ pageState, setPageState }) => {
         <div className="grid-wrapper">
           <div className="col-12 align-center">
             <ul className="actions uniform">
-              <li><button type="submit" className="button">Send</button></li>
+              <li>
+                {messageSent ? (
+                  <span>Message Sent!</span>
+                ) : error ? (
+                  <span>Sorry, there was an error!</span>
+                ) : (
+                  <button type="submit" className="button">Send</button>
+                )}
+              </li>
             </ul>
           </div>
         </div>
